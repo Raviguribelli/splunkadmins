@@ -143,7 +143,7 @@ Each entry in the pattern field will be compared to each entry in the srchIndexe
 To make this command work the Splunk python SDK is bundled into the app, if the bin directory is wiped due to issues with other applications this only disables the two commands which are used in `Search Queries summary non-exact match` so far 
 
 ## KVStore Usage
-Some CSV lookups are now replaced with kvstore entries due to the ability to sync the kvstore across multiple search head or search head cluster(s) via apps like [TA-SyncKVStore](https://splunkbase.splunk.com/app/3519/)
+Some CSV lookups are now replaced with kvstore entries due to the ability to sync the kvstore across multiple search head or search head cluster(s) via apps like [KV Store Tools Redux](https://splunkbase.splunk.com/app/5328/)
 
 ##Lookup Watcher
 The Lookup Watcher is a modular input designed to work in either search head clusters or standalone Splunk instances to determine the modification time and size of all lookup files on the filesystem of the Splunk servers.
@@ -165,6 +165,8 @@ Lookup Watcher generates a log file is created in $SPLUNK_HOME/var/log/splunk/ a
 Feel free to open an issue on github or use the contact author on the SplunkBase link and I will try to get back to you when possible, thanks!
 
 ## Release Notes
+### 2.5.15
+
 ### 2.5.14
 Update Splunk python SDK to 1.6.14
 
